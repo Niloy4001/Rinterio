@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/145ef0fefa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                'manrope': ' Manrope', 
+              },
+              colors: {
+                'common-color':'#ABEF5F',
+                'dark-1':'#212121',
+                'dark-2':'#494949',
+                'dark-3':'#737373',
+                'dark-4':'#1C1C1C',
+              },
+              screens: {
+                'sm': '380px',
+                'md': '640px',
+                },
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header class="max-w-screen-2xl mx-auto">
+        <!-- Navbar section------------------------------------------------------------------------- -->
+        <nav class="max-w-screen-xl mx-auto flex justify-between items-center px-5 lg:px-0 py-8 lg:py-14">
+            <div class="flex items-center gap-x-2">
+                <button class="rounded-full bg-common-color w-8 h-8"><i class="fa-solid fa-arrow-right text-dark-4 -rotate-45"></i></button>
+                <h1 class="text-3xl text-dark-1 font-extrabold">Rinterio</h1>
+            </div>
+            <div class="lg:flex items-center gap-x-9 text-base text-dark-3 font-normal hidden">
+                <p class="text-dark-1 font-extrabold"><a href="">Home</a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Portfolio</a></p>
+                <p><a href="">Blogs</a></p>
+                <p><a href="">Contact Us</a></p>
+            </div>
+            <div class="md:flex items-center hidden"> 
+                <button class="rounded-full bg-white w-8 h-8 text-dark-3"><span class="material-symbols-outlined">search</span></i></button>
+                <button class="ml-4 rounded-full bg-white w-8 h-8 text-dark-3"><span class="material-symbols-outlined">shopping_cart</span></button>
+                <button class="ml-4 px-5 py-3 bg-common-color rounded-3xl text-xl text-dark-4 font-extrabold flex items-center">Book Consult<div class="ml-2 rounded-full bg-dark-4 text-white w-8 h-8 flex items-center justify-center"><i class="fa-solid fa-arrow-right -rotate-45 text-base"></i></div></button>
+            </div>
+            <div class="flex items-center lg:hidden ">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
